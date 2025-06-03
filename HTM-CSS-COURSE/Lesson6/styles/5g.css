@@ -1,0 +1,30 @@
+p {
+  font-family: Arial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.channel {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.channel-name {
+  font-weight: bold;
+}
+
+.channel-link {
+  color: grey;
+}
+
+.description-text {
+  font-size: 17px;
+  margin-bottom: 20px;
+  width: 530px;
+}
+
+.collaborator {
+  cursor: pointer;
+  color: rgb(41, 173, 239);
+  text-decoration: underline;
+}
