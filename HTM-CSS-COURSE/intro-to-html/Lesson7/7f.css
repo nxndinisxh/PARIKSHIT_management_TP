@@ -1,0 +1,35 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Arial;
+  color: rgb(100, 100, 100);
+}
+
+.email-text {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.fill-input {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.warning {
+  margin-top: 5px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.join-button {
+  color: white;
+  background-color: rgb(0, 89, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: none;
+  border-radius: 50px;
+}
