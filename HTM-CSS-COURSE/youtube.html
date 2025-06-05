@@ -13,8 +13,7 @@
       }
 
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
       }
 
       .search-bar {
@@ -33,22 +32,9 @@
         display: inline;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 15px;
-      }
-
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .profile-picture {
@@ -68,16 +54,24 @@
       .video-author {
         margin-bottom: 3px;
       }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" >
 
-    <div class="video-preview">
+    <div class="video-grid">
+      <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-1.webp" >
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/marqusProfile.jpg" >
         </div>
@@ -95,7 +89,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-2.webp" >
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/markpillar.jpg" >
         </div>
@@ -107,6 +101,79 @@
           <p class="video-stats">19M views &#183; 4 years ago</p>
         </div>
       </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-3.avif" >
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-profile/fireship.jpg" >
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            This Microsoft-backed AI startup just collapsed... why?
+          </p>
+          <p class="video-author">Fireship</p>
+          <p class="video-stats">436K views &#183; 1 day ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-4.avif" >
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-profile/Ted-ed.jpg" >
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Would you eat a ghost pepper for a prize? - Dan Kwartler          
+          </p>
+          <p class="video-author">TED-ED</p>
+          <p class="video-stats">173K views &#183; 6 days  ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-5.avif" >
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-profile/Nitish rajput.jpg" >
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Andes Plane Crash Survivor 
+          </p>
+          <p class="video-author">Nitish Rajput</p>
+          <p class="video-stats">5.3M views &#183; 10 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-6.avif" >
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-profile/aniligance.jpg" >
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Before Your Big Moment, Watch This          
+          </p>
+          <p class="video-author">Aniligance</p>
+          <p class="video-stats">313K views &#183; 1 month ago</p>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
