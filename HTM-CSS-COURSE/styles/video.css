@@ -1,5 +1,6 @@
 .thumbnail {
   width: 100%;
+  border-radius: 10px;
 }
 
 .video-title {
@@ -8,6 +9,10 @@
   font-weight: 500;
   line-height: 15px;
   margin-bottom: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .example {
@@ -15,17 +20,25 @@
 }
 
 .video-info-grid {
-  display: grid;
-  grid-template-columns: 50px 1fr;
+  display: flex;
+  align-items: top;
+  column-gap: 10px;
+}
+
+.video-info {
+  flex: 1;
 }
 
 .profile-picture {
-  width: 40px;
+  width: 35px;
   border-radius: 50px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .thumbnail-row {
   margin-bottom: 12px;
+  position: relative;
 }
 
 .video-author,
@@ -43,4 +56,51 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  margin: 5px 25px;
+
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1140px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-time {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.options-icon {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.options {
+  cursor: pointer;
+  padding: 12px 12px 8px 12px;
+
+}
+
+.options:hover {
+  background-color: rgb(227, 227, 227);
+  padding: 12px 12px 8px 12px;
+  border-radius: 20px;
 }

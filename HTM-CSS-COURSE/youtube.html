@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/sub-header.css">
+
 
   <body>
     <div class="header">
@@ -24,36 +26,81 @@
         placeholder="Search" >
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
         <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-icon-container">
+           <img class="notifications-icon" src="icons/notifications.svg">
+           <div class="notifications-count">3</div>
+        </div>
         <img class="current-user-picture" src="channel-profile/unnamed.jpg">
       </div>
     </div>
 
+    <div class="sub-header">
+      <button class="applied-filter-button">All</button>
+      <button class="filter-option-button">Music</button>
+      <button class="filter-option-button">Podcasts</button>
+      <button class="filter-option-button">BTS</button>
+      <button class="filter-option-button">News</button>
+      <button class="filter-option-button">Algorithms</button>
+      <button class="filter-option-button">Web Development</button>
+      <button class="filter-option-button">Mixes</button>
+      <button class="filter-option-button">Gaming</button>
+      <button class="filter-option-button">Live</button>
+      <button class="filter-option-button">AI</button>
+      <button class="filter-option-button">Animated films</button>
+      <button class="filter-option-button">Baking</button>
+    </div>
+
     <div class="sidebar">
-      sidebar
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/shorts-icon.svg">
+        <div>Shorts</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions-icon.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/you.svg ">
+        <div>You</div>
+
+      </div>
     </div>
 
     <div class="video-grid">
       <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-1.webp" >
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/marqusProfile.jpg" >
         </div>
         <div class="video-info">
-          <p class="video-title">
+          <div class="video-title">
+            <p>
             Talking Tech and AI with Google CEO Sundar Pichai!
           </p>
+          <div class="options">
+          <img class="options-icon" src="icons/three-dots-vertical.svg">
+        </div></div>
           <p class="video-author">Marques Brownlee</p>
           <p class="video-stats">3.4M views &#183; 6 months ago</p>
         </div>
@@ -63,33 +110,47 @@
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-2.webp" >
+        <div class="video-time">8:22</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/markpillar.jpg" >
         </div>
         <div class="video-info">
-          <p class="video-title">
+          <div class="video-title">
+            <p>
             Try Not To Laugh Challenge #9          
           </p>
+          <div class="options">
+          <img class="options-icon" src="icons/three-dots-vertical.svg">
+        </div>
+          </div>
+          
           <p class="video-author">Markiplier</p>
           <p class="video-stats">19M views &#183; 4 years ago</p>
         </div>
+        
       </div>
     </div>
 
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-3.avif" >
+        <div class="video-time">3:31</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/fireship.jpg" >
         </div>
         <div class="video-info">
-          <p class="video-title">
+          <div class="video-title">
+            <p>
             This Microsoft-backed AI startup just collapsed... why?
           </p>
+          <div class="options">
+          <img class="options-icon" src="icons/three-dots-vertical.svg">
+        </div>
+          </div>
           <p class="video-author">Fireship</p>
           <p class="video-stats">436K views &#183; 1 day ago</p>
         </div>
@@ -99,54 +160,78 @@
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-4.avif" >
+        <div class="video-time">5:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/Ted-ed.jpg" >
         </div>
         <div class="video-info">
-          <p class="video-title">
+          <div class="video-title">
+            <p>
             Would you eat a ghost pepper for a prize? - Dan Kwartler          
           </p>
+          <div class="options">
+          <img class="options-icon" src="icons/three-dots-vertical.svg">
+        </div>
+          </div>
+          
           <p class="video-author">TED-ED</p>
           <p class="video-stats">173K views &#183; 6 days  ago</p>
         </div>
+        
       </div>
     </div>
 
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-5.avif" >
+        <div class="video-time">31:08</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/Nitish rajput.jpg" >
         </div>
         <div class="video-info">
-          <p class="video-title">
+          <div class="video-title">
+            <p>
             Andes Plane Crash Survivor 
           </p>
+          <div class="options">
+          <img class="options-icon" src="icons/three-dots-vertical.svg">
+        </div>
+          </div>
+          
           <p class="video-author">Nitish Rajput</p>
           <p class="video-stats">5.3M views &#183; 10 months ago</p>
         </div>
+        
       </div>
     </div>
 
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-6.avif" >
+        <div class="video-time">2:04</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-profile/aniligance.jpg" >
         </div>
         <div class="video-info">
-          <p class="video-title">
+          <div class="video-title">
+            <p>
             Before Your Big Moment, Watch This          
           </p>
+          <div class="options">
+          <img class="options-icon" src="icons/three-dots-vertical.svg">
+        </div>
+          </div>
+          
           <p class="video-author">Aniligance</p>
           <p class="video-stats">313K views &#183; 1 month ago</p>
         </div>
+        
       </div>
     </div>
     </div>

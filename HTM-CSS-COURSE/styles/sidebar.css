@@ -6,5 +6,39 @@
 
   background-color: white;
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+  
+  transition: all 0.3s ease;
 }
 
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.sidebar-link img {
+  height: 24px; 
+  margin-bottom: 7px;
+}
+
+.sidebar-link  div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    left: -250px;
+  }
+}
