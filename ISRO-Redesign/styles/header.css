@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: transparent;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.left-section {
+  display: flex;
+  column-gap: 20px;
+}
+
+.isro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 10px;
+}
+
+.isro {
+  font-family: Orbitron, sans-serif;
+  font-size: 35px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+.sub-isro {
+  font-family: Orbitron, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.isro-logo {
+  height: 80px;
+  cursor: pointer;
+}
+
+.Emblem-of-India-logo {
+  width: 50px;
+}
