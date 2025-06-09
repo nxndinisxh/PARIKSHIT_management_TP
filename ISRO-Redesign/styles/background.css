@@ -1,4 +1,4 @@
-.background-video-container {
+.background-container {
   position: relative;
   top: -20px;
   width: 100%;
@@ -6,13 +6,13 @@
   overflow: hidden;
 }
 
-.background-video {
+.background-picture {
   width: 100%;
-  object-fit: contain; /* This ensures the video covers the entire container */
-  object-position: center;
+  object-fit: cover;
+  object-position: bottom;
   position: absolute;
   top: 0;
-  z-index: -2; /* This puts it behind other content */
+  z-index: -2; 
 }
 
 .overlay {
