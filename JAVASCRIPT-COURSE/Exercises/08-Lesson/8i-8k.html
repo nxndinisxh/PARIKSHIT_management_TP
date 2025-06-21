@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>08 Coin Flip Game</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        playGame('heads');
+      "
+    >
+      heads
+    </button>
+    <button
+      onclick="
+      playGame('tails');
+    "
+    >
+      tails
+    </button>
+
+    <button onclick="
+      score.wins = 0;
+      score.loses = 0;
+      localStorage.removeItem('score');
+      showPresentScore();
+    ">Reset Score</button>
+
+    <script>
+      let score = JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        loses: 0
+      };
+
+      function playGame(guess) {
+        let randomNumber = Math.random();
+        let result = "";
+
+        if (randomNumber < 0.5) {
+          result = "heads";
+        } else {
+          result = "tails";
+        }
+
+        updateScore(guess, result);
+
+        console.log(result);
+        console.log(guess === result ? "You Win!" : "You Lose!");
+        showPresentScore();
+      }
+
+      function updateScore(guess, result) {
+        guess === result ? score.wins++ : score.loses++;
+        localStorage.setItem('score', JSON.stringify(score));
+      }
+
+      function showPresentScore() {
+        console.log(`Wins: ${score.wins}, Loses: ${score.loses}`);
+      }
+    </script>
+  </body>
+</html>

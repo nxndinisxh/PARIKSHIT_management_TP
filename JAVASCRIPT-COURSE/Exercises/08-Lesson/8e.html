@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8e</title>
+  </head>
+
+  <body>
+    <script>
+      function isSameProduct(product1, product2) {
+        /*
+        if(product1.price === product2.price && product1.name === product2.name) 
+          return true;
+        else 
+          return false;
+        */
+
+        return(
+          product1.price === product2.price &&
+          product1.name === product2.name
+        );
+      }
+
+      let product2 = {
+        name: 'Plain Hooded Fleece Sweatshirt',
+        price: 2400
+      };
+
+      let product3 = {
+        name: "Men's Slim-Fit Summer Shorts",
+        price: 1699
+        // name: 'Plain Hooded Fleece Sweatshirt',
+        // price: 2400
+      };
+
+      console.log(isSameProduct(product2, product3));
+    </script>
+  </body>
+</html>

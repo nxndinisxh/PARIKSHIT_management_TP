@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8a-8d</title>
+  </head>
+  <body>
+    <script>
+      let product1 = {
+        name: 'basketball',
+        price: 2095
+      };
+
+      console.log(product1);
+
+      product1.price += 500;
+      console.log(product1.price);
+
+      product1['delivery-time'] = '3 days';
+      console.log(product1);
+
+      function comparePrice(product1, product2) {
+        return (product1.price < product2.price ? product1.price : product2.price);
+      }
+
+      let product2 = {
+        name: 'Plain Hooded Fleece Sweatshirt',
+        price: 2400
+      };
+
+      let product3 = {
+        name: "Men's Slim-Fit Summer Shorts",
+        price: 1699
+      };
+
+      console.log(comparePrice(product2, product3))
+    </script>
+  </body>
+</html>
