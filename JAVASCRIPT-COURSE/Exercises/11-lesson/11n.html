@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11n</title>
+  </head>
+  <body>
+    <script>
+      let words = ['apple', 'grape', 'apple', 'mango'];
+      console.log(words);
+
+      countWords(words);
+
+      function countWords(words) {
+        let count = {};
+        for(let i = 0; i < words.length; i++) {
+          let word = words[i];
+          if(count[word] === undefined) {
+            count[word] = 1;
+          } else count[word]++;
+        } 
+        console.log(count);
+      }
+
+    </script>
+  </body>
+</html>
