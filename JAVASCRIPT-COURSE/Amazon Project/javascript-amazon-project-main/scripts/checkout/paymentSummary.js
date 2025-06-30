@@ -64,6 +64,6 @@ export function renderPaymentSummary() {
     </button>
   `;
 
-  document.querySelector('.js-paym ent-summary')
+  document.querySelector('.js-payment-summary')
     .innerHTML = paymentSummaryHTML; 
 }
