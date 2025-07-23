@@ -5,12 +5,10 @@ A modern recreation of the Indian Space Research Organisation (ISRO) website bui
 ## 🚀 Features
 
 - **Modern React Architecture**: Built with functional components and hooks
-- **Responsive Design**: Fully responsive across all devices
 - **Interactive Hero Section**: Dynamic slideshow with mission highlights
 - **Component-Based Structure**: Modular, reusable components
 - **CSS Animations**: Smooth transitions and hover effects
 - **Performance Optimized**: Fast loading with Vite bundler
-- **Accessibility Focused**: Semantic HTML and keyboard navigation
 
 ## 🛠️ Technologies Used
 
